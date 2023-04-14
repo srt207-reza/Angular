@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header">
+    <div class="card-img">
+      <a [routerLink]="['/course', courseItems.CourseId]">
+        <img src="{{ courseItems.CourseImg }}" alt="img" />
+      </a>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+      <h3>
+        <a [routerLink]="['/course', courseItems.CourseId]">{{ courseItems.CourseTitle }}</a>
+      </h3>
+    </div>
+  </div>
+  <div class="card-footer">
+    <h3>{{ courseItems.CoursePrice.toLocaleString('fa-IR') }} تومان</h3>
+    <div class="cours-count">
+      <code>{{ courseItems.CourseCount }}</code>
+      <p>دانشجو</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.header {
+    max-width: 100vw;
+    height: 87px;
+    padding: 0 20%;
+    overflow: hidden;
+    position: relative;
+    background-color: #2f3041;
+}
+
+.above-nav::before {
+    content: '';
+    width: 100vw;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    background-color: #282938;
+    z-index: 1;
+}
+
+.main {
+    max-width: 100vw;
+    height: 92vh;
+    padding: 0 20%;
+    background-color: #2f3041;
+    overflow: hidden;
+    position: relative;
+}

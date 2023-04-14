@@ -1,0 +1,117 @@
+.navbar {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.list {
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 70px;
+    height: 41px;
+    display: inline;
+    float: right;
+    padding: 0 1rem;
+}
+
+.list li {
+    color: #ddd;
+    list-style-type: none;
+    margin: 0.8rem 1.2rem;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.list li:hover {
+    color: #fff;
+}
+
+.icons {
+    position: absolute;
+    left: -25px;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+#search {
+    background-color: #615c68;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    width: 12rem;
+    height: 2.5em;
+    float: right;
+    color: #fff;
+    padding: 0 1rem;
+    margin: 0.2rem 0.5rem;
+    direction: rtl;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: medium;
+}
+
+.search-box {
+    width: 100%;
+    position: relative;
+}
+
+.search-icon {
+    color: #fff;
+    position: absolute;
+    left: 21.5%;
+    top: 8px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #2196f3;
+    border: 2px solid #000;
+    outline: none;
+    padding: 0.55rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #1a78c2;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.left-side img {
+    margin: auto 0.8rem;
+    padding: 0;
+    width: 23px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hr {
+    position: absolute;
+    left: 0;
+    margin-top: 0.5rem;
+    width: 100vw;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.5;
+}

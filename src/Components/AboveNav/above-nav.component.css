@@ -1,0 +1,82 @@
+.AboveNav {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 998;
+}
+
+.AboveNav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #313542;
+    opacity: 0.5;
+    z-index: -9;
+    width: 100vw;
+    height: 35px;
+}
+
+.right {
+    padding: 2px 10px;
+    margin: 0;
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.right li {
+    list-style-type: none;
+    color: #ddd;
+    padding: 0;
+    margin: 5px 10px 0 10px;
+    font-size: .9rem;
+    font-weight: 300;
+    z-index: 997;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.right li:hover {
+    color: #fff;
+}
+
+.left {
+    display: flex;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+.left li {
+    list-style-type: none;
+    margin: 8px 5px 0 5px;
+    color: #ddd;
+    z-index: 996;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.left li:hover {
+    color: #fff;
+}
+
+.icons {
+    font-size: 18px;
+}
+
+.left .link {
+    color: #ddd;
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 300;
+    z-index: 995;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.left .link:hover {
+    color: #fff;
+}

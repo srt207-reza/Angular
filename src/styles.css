@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'IranSans';
+    src: url('./../Assets/Fonts/fonts/woff2/IRANSansWeb.woff2') format('woff2'),
+      url('./../Assets/Fonts/fonts/woff/IRANSansWeb.woff') format('woff'),
+      url('./../Assets/Fonts/fonts/ttf/IRANSansWeb.ttf') format('ttf');
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    font-display: auto;
+  }
+
+body {
+    font-family: 'IranSans' !important;
+    background-color: #242532;
+    background-image: url('https://sabzlearn.ir/wp-content/uploads/2022/07/background-header-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

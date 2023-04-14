@@ -1,0 +1,27 @@
+<div>
+  <nav class="navbar">
+    <div class="right-side">
+      <img
+        src="https://sabzlearn.ir/wp-content/uploads/2022/08/logo-one-copy.png"
+        alt="img"
+      />
+      <ul class="list">
+        <li *ngFor="let item of navItem; let i = index">
+          <mat-icon class="icons" *ngIf="i > 1">keyboard_arrow_down</mat-icon>
+          {{ item }}
+        </li>
+      </ul>
+      <div class="search-box">
+        <mat-icon class="search-icon">search</mat-icon>
+        <input placeholder="جستجو . . ." type="text" id="search" />
+      </div>
+    </div>
+    <div class="left-side">
+        <button class="btn-submit">
+            ورود / عضویت
+        </button>
+        <img src="https://sabzlearn.ir/wp-content/uploads/2022/08/bag.svg" alt="img">
+    </div>
+  </nav>
+  <div class="hr"></div>
+</div>

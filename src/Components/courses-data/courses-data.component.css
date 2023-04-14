@@ -1,0 +1,216 @@
+.container {
+    direction: rtl;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title .right-side {
+    color: rgb(160,204,0);
+    font-size: 1.7em;
+    margin: 3rem 2rem;
+}
+
+.header-title .left-side {
+    color: #fff;
+    font-size: 1.7em;
+    margin: 3rem 2rem;
+    cursor: pointer;
+}
+
+.course-data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.course-data .video {
+    width: 50%;
+}
+
+.course-data .video img {
+    width: 584px;
+    height: 328px;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+.course-data .data {
+    width: 50%;
+}
+
+.data p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.data .download {
+    color: #fff;
+    background-color: #676874;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+    font-size: 15px;
+    font-weight: 500;
+    width: 70%;
+    text-align: right;
+    margin: 2.5rem auto;
+    border-radius: 0.5rem;
+}
+
+.data .quote {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2rem;
+    word-spacing: 1px;
+    width: 170px;
+    text-align: justify;
+    margin: 1rem 4.5rem;
+}
+
+.data .see-course {
+    padding: 0.7rem 1rem;
+    background-color: #03a9f4;
+    color: #fff;
+    text-align: center;
+    width: 122px;
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    margin: 1rem 4rem 0 1rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.data .buy-course {
+    padding: 0.7rem 1rem;
+    background-color: #e91e63;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    font-size: medium;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.data .see-course:hover {
+    background-color: #0287c3;
+}
+
+.data .buy-course:hover {
+    background-color: #ba184f;
+}
+
+.lable-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.lable {
+  width: 243px;
+  height: 60px;
+  background-color: #242531;
+  margin: 1rem;
+  border-right: 2px dashed #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.lable .icon {
+  margin: 1.1rem 0.5rem 0.9rem 0;
+  padding: 0;
+  color: #fff;
+}
+
+.lable p {
+  color: #fff;
+  padding: 1rem 0.5rem;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.text-info {
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+
+.text-info p {
+  font-size: medium;
+  font-weight: 400;
+  text-align: justify;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.loader {
+    --dim: 1.2rem;
+    width: var(--dim);
+    height: var(--dim);
+    position: relative;
+    right: 12rem;
+    top: 1.2rem;
+    animation: spin988 2s linear infinite;
+  }
+  
+  .loader .circle {
+    --color: #121;
+    --dim: 0.5rem;
+    width: var(--dim);
+    height: var(--dim);
+    background-color: var(--color);
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .loader .circle:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .loader .circle:nth-child(2) {
+    top: 0;
+    right: 0;
+  }
+  
+  .loader .circle:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .loader .circle:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
+  
+  @keyframes spin988 {
+    0% {
+      transform: scale(1) rotate(0);
+    }
+  
+    20%, 25% {
+      transform: scale(1.3) rotate(90deg);
+    }
+  
+    45%, 50% {
+      transform: scale(1) rotate(180deg);
+    }
+  
+    70%, 75% {
+      transform: scale(1.3) rotate(270deg);
+    }
+  
+    95%, 100% {
+      transform: scale(1) rotate(360deg);
+    }
+  }

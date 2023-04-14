@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="header-title">
+    <div class="right-side">{{allData?.InfoTitle}}</div>
+    <div class="left-side">خانه / {{allData?.InfoHeader}}</div>
+  </div>
+  <div class="course-data">
+    <div class="video">
+      <img
+        src={{allData?.InfoImg}}
+        alt="img"
+      />
+    </div>
+    <div class="data">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <p>{{allData?.InfoPrice.toLocaleString('fa-IR')}} تومان</p>
+      <p class="download">
+        پس از خرید، بلافاصله به محتوای دوره دسترسی خواهید داشت و میتوانید دوره
+        را مشاهده و یا دانلود کنید.
+      </p>
+      <p class="quote">
+        پــروژه مــحور بودن دوره هــــا پشتیبـــانی دائــــمی محصولات تضمین
+        کیــفیت کلیـه محصولات
+      </p>
+      <button class="see-course">مشاهده دوره</button>
+      <button class="buy-course">خرید دوره</button>
+    </div>
+  </div>
+  <div class="lable-box">
+    <div class="lable">
+      <mat-icon class="icon">person_outline</mat-icon>
+      <p>مدرس : {{allData?.InfoTeacher}}</p>
+    </div>
+    <div class="lable">
+      <mat-icon class="icon">access_time</mat-icon>
+      <p>وضعیت دوره : {{allData?.InfoStatus}}</p>
+    </div>
+    <div class="lable">
+      <mat-icon class="icon">school</mat-icon>
+      <p>تعداد درس : {{allData?.InfoCount}}</p>
+    </div>
+    <div class="lable">
+      <mat-icon class="icon">how_to_reg</mat-icon>
+      <p>دانشجو : {{allData?.InfoStudent}}</p>
+    </div>
+  </div>
+  <div class="text-info">
+    <p>
+      {{allData?.InfoParagraph}}
+    </p>
+  </div>
+</div>
